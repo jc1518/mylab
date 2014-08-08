@@ -1,4 +1,4 @@
-mylab.local servers inventory
+mylab.local servers inventory list
 
 +--------+-----------+---------------+------------------------------+
 | server | eth0      | eth1          | roles                        |
