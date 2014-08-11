@@ -1,6 +1,6 @@
 $TTL 86400
 @	IN	SOA	dns01.mylab.local. root.mylab.local. (
-        2014080700  ;Serial
+        2014081100  ;Serial
         3600        ;Refresh
         1800        ;Retry
         604800      ;Expire
@@ -19,4 +19,5 @@ dev01	IN	A	192.168.56.13
 ; CNAME records
 svn	IN	CNAME	dns01
 admin	IN	CNAME	dns01
+ldap	IN	CNAME	dns01
 puppet	IN	CNAME	dns02
