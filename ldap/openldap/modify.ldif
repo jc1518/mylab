@@ -1,0 +1,4 @@
+dn: uid=jchen,ou=users,dc=mylab,dc=local
+changetype: modify
+replace: gidNumber
+gidNumber: 10
