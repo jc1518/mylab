@@ -1,6 +1,6 @@
 $TTL 86400
 @	IN	SOA     dns01.mylab.local. root.mylab.local. (
-        2014080601  ;Serial
+        2014082000  ;Serial
         3600        ;Refresh
         1800        ;Retry
         604800      ;Expire
@@ -12,5 +12,6 @@ $TTL 86400
 	IN	NS	dns02.mylab.local.
 
 ; PTR records
+1	IN	PTR	fedora.mylab.local.
 11	IN	PTR	admin.mylab.local.
 12	IN	PTR	puppet.mylab.local.
