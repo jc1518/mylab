@@ -9,12 +9,12 @@
 #:ssl_private_key: /var/lib/puppet/ssl/private_keys/puppet.mylab.local.pem
 # the hosts which the proxy accepts connections from
 # commenting the following lines would mean every verified SSL connection allowed
-#:trusted_hosts:
+:trusted_hosts:
 #- foreman.prod.domain
 #- foreman.dev.domain
 
-#- foreman.mylab.local
-#- admin.mylab.local
+- foreman.mylab.local
+- admin.mylab.local
 
 # enable the daemon to run in the background
 :daemon: true

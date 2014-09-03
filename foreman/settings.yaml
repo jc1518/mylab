@@ -3,7 +3,7 @@
 # because they are cached at startup.
 #
 :unattended: true
-:login: true
+:login: false
 :require_ssl: false
 :locations_enabled: false
 :organizations_enabled: false
