@@ -33,6 +33,7 @@ class sys_ldap {
   }
 
   exec { '/usr/sbin/authconfig --enablesssd --enablesssdauth --enableldap --enableldapauth --enablemkhomedir --ldapserver=ldaps://ldap.mylab.local --ldapbasedn=dc=mylab,dc=local --enablelocauthorize --enableldaptls --update':
+    refreshonly => true,
     require => [ File['/etc/openldap/ldap.conf'], File['/etc/openldap/certs/ldap-pub.pem'], File['/etc/sssd/sssd.conf'], ],
   }
 
