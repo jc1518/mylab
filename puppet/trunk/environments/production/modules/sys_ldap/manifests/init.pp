@@ -15,19 +15,19 @@ class sys_ldap {
 
   file { '/etc/openldap/ldap.conf':
     ensure => file,
-    source => 'puppet:///sys_ldap/ldap.conf',
+    source => 'puppet:///modules/sys_ldap/ldap.conf',
     require => Package['openldap-clients'],
   }
 
   file { '/etc/openldap/certs/ldap-pub.pem':
      ensure => file,
-     source => 'puppet:///sys_ldap/ldap-pub.pem',
+     source => 'puppet:///modules/sys_ldap/ldap-pub.pem',
      require => Package['openldap-clients'],
   }
 
   file { '/etc/sssd/sssd.conf':
     ensure => file,
-    source => 'puppet:///sys_ldap/sssd.conf',
+    source => 'puppet:///modules/sys_ldap/sssd.conf',
     mode => 600,
     require => Package['sssd'],
   }
