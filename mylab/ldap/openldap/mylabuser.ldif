@@ -1,8 +1,0 @@
-# admin group
-dn: cn=admin,ou=groups,dc=mylab,dc=local
-cn: admin
-gidNumber: 10000
-objectClass: groupofnames
-member: cn=jchen,ou=users,dc=mylab,dc=local
-
-
