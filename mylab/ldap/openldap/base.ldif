@@ -1,0 +1,32 @@
+# domain
+dn: dc=mylab,dc=local
+dc: mylab
+objectClass: top
+objectClass: domain
+
+# users OU
+dn: ou=users,dc=mylab,dc=local
+ou: users
+objectClass: top
+objectClass: organizationalUnit
+
+# groups OU
+dn: ou=groups,dc=mylab,dc=local
+ou: groups
+objectClass: top
+objectClass: organizationalUnit
+
+# user jchen
+dn: uid=jchen,ou=users,dc=mylab,dc=local
+uid: jchen
+cn: jchen
+sn: 1
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+loginShell: /bin/bash
+homeDirectory: /home/jchen
+uidNumber: 5000
+gidNumber: 10
+userPassword: {SSHA}TgnKeaT3EArzI1xqW/CpzmCRFa88xPS0
+mail: jchen@mylab.local

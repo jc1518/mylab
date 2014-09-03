@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Merge the latest approved changes that have been commited to development
+
+svn merge http://svn/svn/mylab/puppet/trunk/environments/development
