@@ -1,5 +1,5 @@
 class sys_sudo {
 
-  include enable_wheel  
+  include sys_sudo::enable_wheel  
 
 }
