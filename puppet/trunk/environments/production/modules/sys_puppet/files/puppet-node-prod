@@ -1,0 +1,14 @@
+# This file is managed by puppet
+[main]
+    logdir = /var/log/puppet
+    rundir = /var/run/puppet
+    ssldir = $vardir/ssl
+    server = puppet.mylab.local
+    ca_server = puppet.mylab.local
+    pluginsync=true
+
+[agent]
+    classfile = $vardir/classes.txt
+    localconfig = $vardir/localconfig
+    report = true
+    environment = production
