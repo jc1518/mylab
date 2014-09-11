@@ -18,5 +18,9 @@ class sys_puppet::puppet_node_conf {
     source => "puppet:///modules/sys_puppet/$conf_file",
   }
 
+  file {'/etc/puppet/auth.conf':
+    ensure => file,
+    source => "puppet:///modules/sys_puppet/auth.conf",
+  }
 
 }

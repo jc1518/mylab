@@ -5,7 +5,8 @@
     ssldir = $vardir/ssl
     server = puppet.mylab.local
     ca_server = puppet.mylab.local
-    pluginsync=true
+    pluginsync = true
+    listen = true
 
 [agent]
     classfile = $vardir/classes.txt
