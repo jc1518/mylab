@@ -26,6 +26,13 @@
     external_nodes = /etc/puppet/external_node.rb
     node_terminus = exec
 
+    storeconfigs = true
+    dbadapter = mysql
+    dbuser = puppet
+    dbpassword = password
+    dbserver = localhost
+    dbsocket = /var/lib/mysql/mysql.sock
+
 [production]
     modulepath = /etc/puppet/environments/production/modules:/etc/puppet/modules
     manifest = /etc/puppet/environments/production/manifests/site.pp

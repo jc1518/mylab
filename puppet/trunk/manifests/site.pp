@@ -1,2 +1,2 @@
-node default {
-}
+import "nodes"
+
